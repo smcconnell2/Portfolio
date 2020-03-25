@@ -1,0 +1,27 @@
+ABOUT:
+Project I completed while taking Web Application Developement (CSCD378) called Essentials of Life
+
+Assignment was to access Google Maps via google's api and allow user to choose a location
+with a radius from the location. Then display longitude and latitude and provide buttons representing
+"essentails of life". The essentials include gas stations, restrooms, beverages, food, etc.
+Each button then populates the map with markers idicating location of specified essential. 
+
+I went above assignment expectations by implementing button images, a gif, background image,
+map indicator animation, and general CSS additions to improve visaul appearance. 
+
+STATUS: Complete
+
+LINK:
+http://stevenm2.sgedu.site/Essentials/EssentialsStructure.html
+
+TECHNOLOGIES:
+* This project is hosted through siteground.com
+* Visual Studio Code 
+* XAMPP-Control
+* MySQL
+
+LANGUAGES:
+* CSS
+* HTML
+* JavaScript
+* JSon
