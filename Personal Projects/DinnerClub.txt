@@ -1,0 +1,34 @@
+ABOUT: 
+I made this website because my wife and her brother started a dinner
+club where they meet once a week and plan a new interesting dinner to be
+intentional about good food and quality family time.
+
+TECHNOLOGIES:
+* Hosted through siteground.com
+* Visual Studio Code 
+* XAMPP-Control
+* MySQL
+
+LANGUAGES:
+* CSS
+* HTML
+* JavaScript
+* PHP
+
+STAGE:
+* This is a work in progress. 
+* Tabs are functional and each page or overlay is functional.
+* Database stores and retrieves information (adding and deleting entries works)
+* Contacts tab works to send emails
+* Calendar is in working condition (adding events locally and veiwing calendar)
+* Page scales appropriately
+
+IN PROGRESS:
+* Calendar stores events locally and cannot be accessed from another computer
+* Formatting of recipe entry needs work for readability
+* Ability to upload images for recipes
+* When adding to or deleting from Recipes user is brought to another page
+* Editting current database entry is not working (although deleting entry works)
+
+Link to website:
+http://stevenm2.sgedu.site/DinnerClub/DinnerClubStructure.html
