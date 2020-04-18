@@ -1,0 +1,93 @@
+steven@ubuntu:~/Desktop/Lab7$ valgrind ./lab7
+==9178== Memcheck, a memory error detector
+==9178== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==9178== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==9178== Command: ./lab7
+==9178== 
+command?: ls
+a.out		      cscd340Lab7.c  linkedList  pipes	  tokenize
+cscd340_f18_lab7.pdf  lab7	     Makefile	 process  utils
+command?: ls | wc
+     10      10      95
+command?: ls | sort
+a.out
+cscd340_f18_lab7.pdf
+cscd340Lab7.c
+lab7
+linkedList
+Makefile
+pipes
+process
+tokenize
+utils
+command?: ls | sort | wc
+     10      10      95
+command?: history
+ls
+ls -a
+
+ls | sort | wc
+ls -l | sort | wc -w
+history
+ls
+ls | wc
+ls | sort
+ls | sort | wc
+command?: !2 
+a.out
+cscd340_f18_lab7.pdf
+cscd340Lab7.c
+lab7
+linkedList
+Makefile
+pipes
+process
+tokenize
+utils
+command?: ls
+a.out		      cscd340Lab7.c  linkedList  pipes	  tokenize
+cscd340_f18_lab7.pdf  lab7	     Makefile	 process  utils
+command?: !!
+a.out		      cscd340Lab7.c  linkedList  pipes	  tokenize
+cscd340_f18_lab7.pdf  lab7	     Makefile	 process  utils
+command?: L      
+a.out		      cscd340Lab7.c  linkedList  pipes	  tokenize
+cscd340_f18_lab7.pdf  lab7	     Makefile	 process  utils
+command?: alias LA="ls -a"
+command?: LA
+.      cscd340_f18_lab7.pdf  lab7	 pipes		process   .vscode
+..     cscd340Lab7.c	     linkedList  .posh_history	tokenize
+a.out  .idea		     Makefile	 .poshrc	utils
+command?: unalias LA
+command?: LA
+==9195== 
+==9195== HEAP SUMMARY:
+==9195==     in use at exit: 536 bytes in 42 blocks
+==9195==   total heap usage: 200 allocs, 158 frees, 13,606 bytes allocated
+==9195== 
+==9195== LEAK SUMMARY:
+==9195==    definitely lost: 0 bytes in 0 blocks
+==9195==    indirectly lost: 0 bytes in 0 blocks
+==9195==      possibly lost: 0 bytes in 0 blocks
+==9195==    still reachable: 536 bytes in 42 blocks
+==9195==         suppressed: 0 bytes in 0 blocks
+==9195== Rerun with --leak-check=full to see details of leaked memory
+==9195== 
+==9195== For counts of detected and suppressed errors, rerun with: -v
+==9195== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+command?: ls > test.txt
+command?: ls
+a.out		      cscd340Lab7.c  linkedList  pipes	  test.txt  utils
+cscd340_f18_lab7.pdf  lab7	     Makefile	 process  tokenize
+command?: exit
+==9178== 
+==9178== HEAP SUMMARY:
+==9178==     in use at exit: 0 bytes in 0 blocks
+==9178==   total heap usage: 307 allocs, 307 frees, 28,878 bytes allocated
+==9178== 
+==9178== All heap blocks were freed -- no leaks are possible
+==9178== 
+==9178== For counts of detected and suppressed errors, rerun with: -v
+==9178== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+steven@ubuntu:~/Desktop/Lab7$ 
+
