@@ -1,0 +1,129 @@
+body{
+    font-weight: bold;
+    color: #1b263b;
+}
+.Container{
+    
+    display: flex;
+    
+    justify-content: center;
+    padding: 0;
+}
+
+.Container section{
+    flex: 1 1 0;
+}
+
+main section{
+    margin: 1rem;
+    padding: 2rem;
+}
+
+h2{
+
+    font-size: 3em;
+}
+
+section:nth-child(odd) h2{
+    color: #e56b6f;
+}
+
+section:nth-child(even) h2{
+    color: black;    
+}
+
+section:nth-child(odd){
+    
+    background-color:#6ae4d8;
+    color: #1b263b;
+}
+
+#objective{
+
+    text-align: center;
+    padding: 0 30%;
+    padding-bottom: 2em;
+}
+
+#objective h2{
+    color: #e56b6f;
+    padding-bottom: 1rem;
+    border-bottom: #8e9aaf solid 2px;
+}
+
+#projects{
+    background-color:#f7f2f0;
+    margin: 2rem 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+}
+
+#projects section{
+    flex: 1 1 0;
+}
+
+#projects section:nth-child(odd) h3{
+    color: #e56b6f;
+}
+
+
+#popUp {
+    text-decoration: none;
+    position: fixed;
+    padding: 1rem;
+    z-index: 100;
+    width: 10%;
+    height: 10%;
+    bottom: -200px;
+    border-radius: 5%;
+    left: 0;
+    background-color: #6d93be;
+    transition: 1.5s;
+    color: white;
+    font-size: 100%;
+    text-align: center
+  }
+#popUp.show {
+    bottom: 100px;
+    border-radius: 5%;
+  }
+
+#popUp:hover{
+    background-color: #4d908e;
+    cursor: pointer;
+    color: rgba(255, 244, 224, 0.61);
+    transform: translateY(-0.25em);
+    box-shadow: 5px 10px rgb(248, 221, 170);
+}
+#projects section{
+    padding: .5em;
+}
+
+@media(max-width: 1050px){
+
+    #projects{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #projects section{
+        padding: 2rem;
+    }
+
+    #popUp{
+        display: none;
+    }
+}
+
+
+@media(max-width: 900px){
+    .Container{
+        flex-direction: column;
+        justify-content: center;
+    }    
+}
+
+@media(max-width: 700px){
+    
+}

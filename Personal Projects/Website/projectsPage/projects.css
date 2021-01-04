@@ -1,0 +1,141 @@
+body{
+    font-weight: bold;
+    color: #264653;
+}
+
+h2{
+    background-color: #00a896;  
+    font-size: 2rem;
+    text-align: left;
+    color: white;
+    padding: 2rem;
+    transition: 2s;
+
+}
+
+h2:hover{
+    padding-left: 30%;
+}
+
+.Collapsible:hover{
+
+    cursor: pointer;
+    background-color: #1d746b;
+}
+
+#helpfulMsg{
+    font-size: 1.5rem;
+    color: #f6bd60;
+    margin-top: 2rem;
+    padding-right: 12%;
+}
+
+
+h3{
+    background-color: #8e9aaf;
+    color: white;
+    padding: 1rem;
+}
+
+main div{
+    text-align: right;
+    padding-right: 10%;
+    font-weight: bold;
+}
+
+
+
+#gitHubReminder{
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #f28482; 
+    color: white;
+    text-align: right;
+    font-weight: normal;
+    font-size: 2rem;
+    transition: .5s;
+}
+
+#gitHubReminder:hover{
+    background-color: #b39291;
+    color: #f7da8a;
+}
+
+.Collapsible section{ 
+    flex: 1 1 0;
+    padding: 1rem;
+}
+
+.HideSeek section:nth-child(odd){
+    background-color: #e5e5e5;
+}
+
+.HideSeek section{
+ padding: 2rem;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.HideSeek{
+    transition: 3s;
+}
+
+
+
+.HideSeek a{
+    background-color: #faa307;
+    color: white;
+    font-weight: bolder;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.HideSeek a:hover{
+    background-color: #f7cb7a;
+    color: grey;
+}
+
+.HideSeek #checkItOut{
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+#runBudget{
+    line-height: 2.5rem;
+}
+
+#gitHubBtn{
+    margin-left: 2rem;
+}
+
+#sourCodeReminder{
+    background-color: #90be6d;
+    color: white;
+    padding: 2rem;
+    margin: 1rem;
+    width: 15%;
+    height: 15%;
+    float: right;
+    text-decoration: none;
+    border-radius: 5%; 
+    font-size: 1.5rem;
+    transition: 1s;
+}
+
+#sourCodeReminder:hover{
+    background-color: #4d908e;
+    color: rgba(255, 244, 224, 0.61);
+    transform: translateY(-0.25em);
+    box-shadow: 5px 10px rgb(248, 221, 170);
+}
+
+@media (max-width: 800px){
+    #gitHubReminder{
+        font-size: 1.5rem;
+    }
+}

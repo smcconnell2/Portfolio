@@ -1,0 +1,19 @@
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    margin: 0;
+    padding:.5em;
+    padding-bottom: 1em;
+    font-size: 5em;
+    background-color: #577590;
+    color: white;
+    text-align: left;
+    transition: 2s;    
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+      
+}
+
+h1:hover{
+    color: #fcbf49;
+}

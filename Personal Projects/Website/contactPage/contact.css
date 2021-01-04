@@ -1,0 +1,112 @@
+
+
+main{
+    
+    display: flex;
+    flex-direction: row;
+    padding: 4rem;
+    justify-content: center;
+}
+
+h2{
+    
+    font-size: 2rem;
+}
+
+#container{
+    text-align: center;
+    background-color: rgb(252, 252, 252);
+    color: #1b263b;
+    border-radius: 1%;
+    margin: 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container section{
+    flex: 1 1 0;
+    text-align: center;
+    padding: 2rem;
+}
+
+#container2{
+    background-color: rgb(245, 245, 245);
+    padding: 2rem;
+    border-radius: 1%;
+    color: #1b263b;
+    margin: 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container2 section{
+    flex: 1 1 0;
+    text-align: center;
+    padding: 2rem;
+}
+
+.ContactInfo{
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#phone{
+    background-color:rgb(245, 245, 245);
+    color: #1b263b;
+}
+
+#email{
+    color:#4361ee;
+    padding: 1rem;
+    transition: background-color 1s, color 1s;
+
+}
+
+#email:hover{
+    color: #8086a0;
+    background-color:#ffffff;
+}
+
+#github{
+    background-color:#4a4e69;
+    color: white;
+    border: rgb(73, 73, 73) solid 1px;
+}
+
+#github:hover{
+    background-color:#9396a5;
+}
+
+.ContactInfo2{
+    background-color: #3a86ff;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    transition: .5s;
+    border: rgb(97, 97, 97) solid 1px;
+}
+
+.ContactInfo2:hover{
+    background-color: #8eb8fc;
+    color: #dee2e6;
+    cursor: pointer;
+    
+}
+
+@media (max-width: 1000px){
+    main{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px){
+    #email{
+        font-size: .9rem;
+        padding: 0;
+    }
+}

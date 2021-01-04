@@ -1,0 +1,187 @@
+header{
+    position: sticky;
+}
+
+main{
+    margin: 0;
+}
+
+#mainPic div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#mainPic h2{
+    display: inline-block;
+    padding-left: 10%;
+    font-size: 2em;
+    color: #e7dd91;
+    transition: 2s;
+}
+
+#mainPic h2:hover{
+    color: white;
+}
+
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    font-weight: lighter;
+    padding: 0;
+    font-size: 5em;
+    color: white;
+    text-align: left;
+    transition: 2s;
+    
+}
+
+h1:hover{
+    color: #fcbf49;
+}
+
+#mainPic{
+    background-image: url("/images/luke-chesser-pJadQetzTkI-unsplash\ \(1\).jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30em;
+    margin: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+#myPic{
+    border-radius: 50%;
+    margin-left: 2rem;
+    float: left;
+    width: 30%;
+    height: auto;
+}
+
+#aboutHeader{
+    text-align: center;
+    font-size: 3em;
+    top: 0;
+    color: #6d93be;
+    transition: 2s;
+    padding-bottom: 0;
+}
+
+#aboutHeader:hover{
+    margin: 0 5rem;
+    transform: translateY(-0.25em);
+    box-shadow:0 10px rgb(248, 221, 170);
+}
+
+#aboutBody{
+    display: flex;
+    padding: 0 3em 1em 3em;
+    line-height: 2em;
+    background-color: white;
+    color: black;
+}
+
+
+#resumeReminder{
+    background-color: #90be6d;
+    color: white;
+    padding: 2rem;
+    margin: 1rem;
+    width: 15%;
+    height: 15%;
+    float: right;
+    text-decoration: none;
+    border-radius: 5%; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 1s;
+}
+
+#resumeReminder:hover{
+    background-color: #4d908e;
+    color: rgba(255, 244, 224, 0.61);
+    transform: translateY(-0.25em);
+    box-shadow: 5px 10px rgb(248, 221, 170);
+}
+
+#projectReminder{
+    background-color: #6d93be;
+    color: white;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    margin: 1rem;
+    width: 15%;
+    height: 15%;
+    float: left;
+    text-decoration: none;
+    border-radius: 5%; 
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: 1s;
+}
+
+#projectReminder:hover{
+    background-color: #4d908e;
+    color: rgba(255, 244, 224, 0.61);
+    transform: translateY(-0.25em);
+    box-shadow: 5px 10px rgb(248, 221, 170);
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+footer{
+    scroll-margin-bottom: 0;
+    bottom: 0;
+ 
+}
+
+@media (max-width: 1000px){
+    #resumeReminder, #projectReminder{
+        display: none;
+        font-size: .7em;
+        padding: .5em;
+    }
+}
+
+@media (max-width: 823px){
+
+
+    h1{
+        font-size: 4em;
+        padding-left: .5em;
+        margin-bottom: 0;
+    }
+
+    #myPic{
+        margin-left: 35%;
+        float: none;
+    }
+    
+    #aboutHeader{
+        
+        padding-left: 4em;
+    }
+
+    #aboutHeader:hover{
+        margin: 0;
+    }
+
+    #aboutBody{
+        padding: 0;
+        margin-bottom: 5rem;
+        margin-left: 1rem;
+    }
+
+    #aboutBody p{
+        font-size: 1em;
+    }
+
+    #resumeReminder, #projectReminder{
+        display: none;
+
+    }
+}
