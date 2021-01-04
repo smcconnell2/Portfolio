@@ -1,0 +1,153 @@
+/* [PERIOD SELECTOR] */
+#cal-date {
+  margin: 10px 0;
+}
+#cal-mth, #cal-yr, #cal-set {
+  padding: 10px;
+  font-size: 1.2em;
+  border: 0;
+  background: rgba(137, 196, 177, 0.767);
+  color: rgb(255, 255, 255);
+}
+
+/* [CALENDAR] */
+
+#cal-body{
+  display: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /*background-image: linear-gradient(rgba(216, 169, 143, 0.932),rgba(177, 152, 119, 0.808), rgba(201, 207, 145, 0.589) );
+  */
+  background-image: linear-gradient(rgba(238, 238, 238, 0.959),rgba(245, 242, 239, 0.918), rgba(218, 218, 218, 0.938) );
+
+  
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 20px;
+  margin: auto;
+  max-width: 700px;
+  max-height: 500px;
+}
+
+#exitButton{
+  position: absolute;
+  z-index: 2;
+
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 15px;
+
+  font-weight: bolder;
+  font-size: 20px;
+
+  color: rgb(17, 17, 17);
+}
+
+#exitButton:hover{
+  cursor: pointer;
+
+  color: rgb(150, 148, 148);
+
+}
+
+#cal-container{
+
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+#calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+#calendar tr.head td {
+  
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(120, 151, 177, 0.884);
+
+
+  padding: 15px;
+  text-align: center;
+}
+#calendar tr.day td {
+  border: 1px solid #ddd;
+  width: 14.28%;
+  padding: 15px 5px;
+  vertical-align: top;
+}
+#calendar tr.day td:hover {
+  background: #fcf0c6e0;
+}
+#calendar tr td.blank {
+  background: #f5f5f5c4;
+}
+#calendar .dd {
+  font-size: 1.2em;
+  color: rgb(0, 0, 0);
+}
+#calendar .evt {
+  margin-top: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+  overflow: hidden;
+  color: #b41212;
+}
+
+/* [ADD/EDIT EVENT] */
+#cal-event form {
+  padding: 15px;
+  margin-top: 20px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+}
+#cal-event h1 {
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+#evt-date {
+  color: #999;
+  margin: 10px 0;
+}
+#cal-event textarea {
+  display: block;
+  box-sizing: padding-box;
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  resize: none;
+}
+#cal-event input[type=button], #cal-event input[type=submit] {
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.2em;
+  border: 0;
+  background: #8cccb7c4;
+  color: #fff;
+}
+
+#denied {
+  display: none;
+
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  color: rgb(207, 73, 73);
+}
+
+/* [DOES NOT MATTER] */
+html, body, textarea, input{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}

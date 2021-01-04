@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>DinnerClub</title>
+    <link rel="stylesheet" href="./DinnerClubDisplay.css">
+    <link rel="stylesheet" href="./Calendar/calendar.css">
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script async defer src="./DinnerClub.js"></script>
+    <script async defer src="./Calendar/calendar.js"></script>
+</head>
+<body id="body" class="Body">
+
+
+    <div id = "subBody">
+        <div id="topScreen" class="HeaderBox">
+            <h1 id="title" class="Headers"> DINNER CLUB </h1>
+        </div>
+
+
+        <div id="options" class="Options">
+
+            <div class="HomeDrop">
+                <insert class="Home"> HOME </insert>
+            </div>
+
+            <div class="RecipeDrop">
+                <insert class="Recipe"> RECIPES </insert>
+            </div>
+
+            <div class="CalendarDrop">
+                <insert id="calendarButton" type="button" class="Calendar"> CALENDAR </insert>
+            </div>
+
+            <div id="cantactDrop" class="ContactDrop">
+                <insert class="Contact"> SUPPORT </insert>
+                <div class="ContactContent">
+                    <p>Email:</p>
+                    <a href="mailto:deloshdinnerclub@gmail.com">Contact Us</a><br><br>
+                    <a href="mailto:stevendanielmcconnell@gmail.com">Steven McConnell: IT</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div>
+            <p id="greating" class="Greating">~ A time for friends to gather and make great food. ~</p>
+            <img id="mainPicture" class="Picture" src="./food1.jpg" alt="food">
+        </div>
+
+    </div>
+
+    <div id="cal-body">
+        <!-- [PERIOD SELECTOR] -->
+
+        <div id="exitPosition">
+            <insert id="exitButton" type="button">&#10006</insert>
+        </div>
+
+        <div id="cal-date">
+          <select id="cal-mth"></select>
+          <select id="cal-yr"></select>
+          <input id="cal-set" type="button" value="SET"/>
+        </div>
+    
+        <!-- [CALENDAR] -->
+        <div id="cal-container"></div>
+    
+        <!-- [EVENT] -->
+        <div id="cal-event"></div>
+        <div id="denied"> Please email event suggestions to admin.</div>
+
+    </div>
+    
+    <form>
+        <a href="./Database/students.php">students.php</a>
+    </form>
+</body>

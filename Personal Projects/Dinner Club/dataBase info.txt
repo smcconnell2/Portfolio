@@ -1,0 +1,14 @@
+$db = "steve331_recipes";
+$host = "localhost";
+$user = "steve331_steven";
+$pw = "steve331";
+$charset  = "utf8mb4";
+
+Table:
+Recipes
+
+Cols:
+Title VARCHAR
+Image BLOB
+Ingredients TEXT
+Directions MEDIUMTEXT

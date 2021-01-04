@@ -1,0 +1,240 @@
+
+
+.Body{
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.HeaderBox{
+    padding-top: 1px;
+    height: 100px;
+    width: auto;    
+
+    /*background: rgb(120, 177, 174);*/
+    background-image: linear-gradient(to bottom right, rgb(122, 177, 147),rgb(120, 177, 174), rgb(120, 151, 177) );
+    
+}
+
+.Headers{
+    padding-left: 20px;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+
+}
+
+
+.Options{
+    width: auto;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+    background-image: linear-gradient(to bottom right, rgb(233, 233, 220),rgb(233, 233, 220), rgb(218, 218, 194));
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+.HomeDrop{
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.Home:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px  2px 4px #00000044;
+
+    cursor: pointer;
+}
+
+.Recipes{
+    text-align: center;
+    font-weight: bold;
+}
+
+.Picture{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 100%;
+    height: auto;
+}
+/*****************************************************************/
+.Display{
+    margin: 2px;
+}
+
+.RecipeTitle{
+    width: auto;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+
+    padding: 10px;
+    padding-top: 20px;
+
+    
+    background: rgba(224, 168, 177, 0.486);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.RecipePicture{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 50%;
+    height: auto;
+}
+
+.RecipeDesc{
+    width: auto;
+    /*height: 30px;*/
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.RecipeIngredients{
+    width: auto;
+    /*height: 30px;*/
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+
+    
+    background: rgba(230, 225, 185, 0.315);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.RecipeInstructions{
+    width: auto;
+    /*height: 30px;*/
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+
+    
+    background: rgb(230, 225, 185);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+/*****************************************************************/
+
+.button{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    background: rgb(209, 140, 140);
+
+    /*float: left;*/
+    display: inline-block;
+}
+
+.button:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px  2px 4px #00000044;
+
+    cursor: pointer;
+}
+
+/****************************************edit***********************/
+
+.EditDrop{
+    text-align: center;
+
+    background: rgb(174, 224, 168);
+    padding: 10px;
+    width: 40px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    margin-bottom: 30px;
+
+}
+
+.EditContent{
+    display: none;
+    position: absolute;
+    padding: 10px;
+    padding-left: 20px;
+
+    background-color:  rgb(243, 243, 236);
+    min-width: 200px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+
+    z-index: 1;
+
+    margin-left: -10px;
+
+}
+
+.EditDrop:hover{
+    /*color: rgb(255, 255, 255);
+    text-shadow: 2px  2px 4px #00000044;*/
+
+    background-color:  rgb(243, 243, 236);
+    cursor: pointer;
+}
+
+.EditDrop:hover .EditContent {
+    display: block;
+
+}
+
+/******************************************add********************/
+
+
+.AddDrop{
+    margin-left: 20px;
+    margin-bottom: 50px;
+    padding: 10px;
+
+    background: rgb(209, 140, 140);
+
+    float: left;
+}
+
+.AddContent{
+    display: none;
+    position: absolute;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin-left: -10px;
+    margin-bottom: 50px;
+
+    background-color:  rgb(243, 243, 236);
+    min-width: 200px;
+
+    z-index: 1;
+
+}
+
+.AddDrop:hover{
+    background-color:  rgb(243, 243, 236);
+    cursor: pointer;
+}
+
+.AddDrop:hover .AddContent {
+    display: block;
+
+}
